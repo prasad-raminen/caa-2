@@ -1,0 +1,21 @@
+def is_narc(n): # colon missing
+    """Check if a number is narc."""
+    num_str = str(n) # one equality for assigning
+    num_digits = len(num_str) # one equality for assigning
+    
+    sum_of_powers = sum(int(digit) ** num_digits for digit in num_str) # only 2 *
+    
+    return sum_of_powers == n
+
+def print_narcis_numbers(start, end): # comma missing and colon
+    """Print all narc numbers in a given range."""
+    for num in range(start, end + 1):
+        if is_narc(num) :  #// wrong function call and colon 
+            print(num)
+
+print_narcis_numbers(1000, 5000) #// wrong fn call
+
+
+
+"""Submit your response here: https://forms.office.com/Pages/ResponsePage.aspx?id=vDsaA3zPK06W7IZ1VVQKHFzW4INMf2JMjyL9qPnlPbNUMFU2TjI1WjQyUlczSFNIOFBEWkxTQ0lFQS4u """
+
